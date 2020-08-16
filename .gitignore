@@ -35,3 +35,4 @@ package.json
 .vscode
 *.css.map
 .gitignore
+/sass
