@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/brands.css"
 		integrity="sha384-MiOGyNsVTeSVUjE9q/52dpdZjrr7yQAjVRUs23Bir5NhrTq0YA0rny4u/qe4dxNj" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/fontawesome.css"
 		integrity="sha384-PRy/NDAXVTUcXlWA3voA+JO/UMtzWgsYuwMxjuu6DfFPgzJpciUiPwgsvp48fl3p" crossorigin="anonymous">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" href="img/book.ico" type="image/x-icon">
 	<title>Предпродажа книги - "Путь фрилансера"</title>
@@ -18,16 +18,16 @@
 <body>
 	<header class="hero">
 		<div class="container">
-			<div class="navbar" data-aos="fade-down" data-aos-delay="500">
+			<div class="navbar animate__animated animate__fadeInDownBig animate__delay-1s animate__slow">
 				<span class="navbar__logo">Артём Исламов</span>
 				<div class="navbar__social">
-					<a href="#"><i class="fab fa-vk navbar__icon"></i></a>
-					<a href="#"><i class="fab fa-youtube navbar__icon"></i></a>
-					<a href="#"><i class="fab fa-instagram navbar__icon"></i></a>
+					<a href="https://vk.com"><i class="fab fa-vk navbar__icon"></i></a>
+					<a href="https://youtube.com"><i class="fab fa-youtube navbar__icon"></i></a>
+					<a href="https://instagram.com"><i class="fab fa-instagram navbar__icon"></i></a>
 				</div>
 			</div>
 			<div class="hero__row">
-				<div class="hero__text" data-aos="fade-right" data-aos-delay="1500">
+				<div class="hero__text animate__animated animate__fadeInLeftBig animate__delay-1s">
 					<span class="hero__subtitle subtitle">Предпродажа книги</span>
 					<div class="hero__title title">
 						<h1>Путь Фрилансера</h1>
@@ -38,10 +38,10 @@
 					<span class="hero__price-tag">Цена</span>
 					<div class="hero__price">790 руб</div>
 					<div class="hero__buttons">
-						<a href="#" class="hero__button hero__button-1">Заказать книгу</a>
-						<a href="#" class="hero__button">Слушать отрывок</a></div>
+						<button class="hero__button hero__button-1">Заказать книгу</button>
+						<button class="hero__button">Слушать отрывок</button></div>
 				</div>
-				<div class="hero__image" data-aos="fade-left" data-aos-delay="1000">
+				<div class="hero__image animate__animated animate__fadeInRightBig animate__delay-2s animate__slow">
 					<img src="img/hero/book.png" alt="Book" class="hero__img">
 				</div>
 				<div class="hero__img"></div>
@@ -52,11 +52,11 @@
 	</header>
 	<section class="about">
 		<div class="container">
-			<div class="about__heading" data-aos="fade-right" data-aos-delay="700">
+			<div class="about__heading">
 				<span class="about__subtitle subtitle">О чём книга</span>
 				<h2 class="about__title title">Путь Фрилансера</h2>
 			</div>
-			<div class="about__row" data-aos="fade-up" data-aos-delay="1000">
+			<div class="about__row">
 				<div class="about__item">
 					<div class="about__image"><img src="img/about/about-icons/human.png" alt="Human"></div>
 					<div class="about__descr">
@@ -93,11 +93,11 @@
 	</section>
 	<section class="people">
 		<div class="container">
-			<div class="people__heading" data-aos="fade-right" data-aos-delay="700">
+			<div class="people__heading">
 				<span class="people__subtitle subtitle">Эти люди уже</span>
 				<h2 class="people__title title">Заказали книгу</h2>
 			</div>
-			<div class="people__row" data-aos="fade-up" data-aos-delay="1000">
+			<div class="people__row">
 				<div class="people__item people__item_first">
 					<img src="img/people/people-img/picture-1.jpg" class="people__img" alt="People">
 				</div>
@@ -119,7 +119,7 @@
 			</div>
 		</div>
 	</section>
-	<footer class="footer" data-aos="flip-down" data-aos-delay="1000">
+	<footer class="footer animate__animated animate__fadeInUp animate__delay-5s animate__slow">
 		<div class="container">
 			<div class="footer__row">
 				<div class="footer__requisits">
@@ -154,7 +154,13 @@
 			</div>
 		</div>
 	</footer>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<div class="modal-bg">
+		<div class="modal">
+			<button class="modal__close">&times;</button>
+			<h4 class="modal__title">Это демо-версия страницы</h4>
+			<p class="modal__text">Поэтому к сожалению, кнопка не работает &#128577;</p>
+		</div>
+	</div>
 	<script src="js/main.js"></script>
 </body>
 
